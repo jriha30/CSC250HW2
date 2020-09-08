@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class Driver
 {
 	public static void main(String[] args)
 	{
-		vowelCount("Philippians");
-		vowelCount("Romans");
-		vowelCount("Ephesians");
+		Scanner scannerObject = new Scanner(System.in);
+		System.out.println("What word/phrase would you like to count the vowels of?");
+		String wordUsed = scannerObject.nextLine();
+		vowelCount(wordUsed);
 	}
 	static void vowelCount(String newTestamentBook)
 	{
@@ -43,7 +46,7 @@ public class Driver
 				countU++;
 			}
 		}
-		System.out.println("There are " + count + " vowels in " + s + ".");
+		System.out.println("There are " + count + " vowels in \"" + s + "\".");
 		System.out.println(countA + " A's");
 		System.out.println(countE + " E's");
 		System.out.println(countI + " I's");

@@ -9,9 +9,9 @@ public class Driver
 		String wordUsed = scannerObject.nextLine();
 		vowelCount(wordUsed);
 	}
-	static void vowelCount(String newTestamentBook)
+	static void vowelCount(String vowelCountedWord)
 	{
-		String s = newTestamentBook;
+		String s = vowelCountedWord;
 		int count = 0;
 		int countA = 0;
 		int countE = 0;
